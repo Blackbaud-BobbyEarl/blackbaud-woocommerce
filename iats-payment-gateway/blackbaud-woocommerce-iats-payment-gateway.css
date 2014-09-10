@@ -1,0 +1,9 @@
+#creditCardExpiry-Month,
+#creditCardExpiry-Year {
+	margin-right: 0 !important;
+	width: 40px !important;
+}
+
+#cvv2 {
+	width: 60px !important;
+}
