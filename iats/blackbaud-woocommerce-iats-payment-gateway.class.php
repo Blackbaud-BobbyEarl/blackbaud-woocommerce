@@ -110,10 +110,8 @@ class Blackbaud_WooCommerce_iATS_Gateway extends WC_Payment_Gateway {
 				'label' => __('Enable Logging', 'woocommerce'),
 				'default' => 'no',
 				'description' => sprintf(
-					__('Log all events in <code>woocommerce/logs/blackbaud-woocommerce-iats-payment-gateway-log-%s.txt</code><br /><strong>NOTE:</strong>  This will record ALL transaction information.', 'woocommerce'),
-					sanitize_file_name( 
-						wp_hash('blackbaud')
-					)
+					__('Log all events in <code>%s</code><br /><strong>NOTE:</strong>  This will record ALL transaction information.', 'woocommerce'),
+          wc_get_log_file_path('blackbaud')
 				)
 			),
 			'sandbox' => array(
