@@ -51,7 +51,7 @@ class Blackbaud_WooCommerce_iATS_Gateway extends WC_Payment_Gateway {
 
 		// Create log
 		if ($this->logging) {
-			$this->logger = $woocommerce->logger();
+			$this->logger = new WC_Logger();
 		}
 
 		// Save options
